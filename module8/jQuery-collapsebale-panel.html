@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src=jquery-3.3.1.min.js></script>
+    <link rel="stylesheet" type="text/css" href="fontawesome-5.6.3/css/all.min.css">
+    <title>Collapseable panel</title>
+    <style>
+        .panel-success .panel-heading {
+            background-color: lightgreen;
+        }
+        
+        .panel-success .panel-body {
+            border: 1px solid lightgreen;
+        }
+        
+        .panel-failure .panel-heading {
+            background-color: lightpink;
+        }
+        
+        .panel-failure .panel-body {
+            border: 1px solid lightpink;
+        }
+        
+        .panel-success {
+            border: 1px solid lightgreen;
+            border-radius: 4px;
+        }
+        
+        .panel-failure {
+            border: 1px solid lightpink;
+            border-radius: 4px;
+        }
+        
+        .panel-heading,
+        .panel-body {
+            padding: 10px 20px;
+        }
+        
+        .panel {
+            margin: 20px;
+        }
+        
+        .panel-heading {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="collapsebale-panel">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                Message-1
+            </div>
+            <div class="panel-body">
+                You are in message 1
+            </div>
+        </div>
+
+
+
+        <div class="panel panel-failure">
+            <div class="panel-heading">
+                Message-2
+            </div>
+            <div class="panel-body">
+                You are in message-2
+            </div>
+        </div>
+
+        <div class="panel panel-failure">
+            <div class="panel-heading">
+                Message-3
+            </div>
+            <div class="panel-body">
+                You are in message-3
+            </div>
+        </div>
+
+        <div class="panel panel-failure">
+            <div class="panel-heading">
+                Message-4
+            </div>
+            <div class="panel-body">
+                You are in message-4
+            </div>
+        </div>
+    </div>
+    <script>
+        $('document').ready(function() {
+
+            $('.panel-heading').click(function() {
+                console.log("Panel-heading in clicked");
+                $('.panel-body').hide();
+                $(this).closest('.panel')
+                    .find('.panel-body')
+                    .toggle()
+            })
+
+            $('.panel-body').hide();
+            $('.panel:first-child').find('.panel-body').show();
+
+
+        })
+    </script>
+
+
+</body>
+
+</html>

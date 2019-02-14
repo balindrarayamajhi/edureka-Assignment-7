@@ -1,0 +1,124 @@
+﻿    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Page layout</title>
+            <style>
+                .div1>p{
+                    display:inline;
+                }
+                .div2 > p {
+                    display: inline-block;
+                    width:140px;
+                    /*The display: inline-block Value. Compared to display: inline , the major difference is that display: 
+                    inline-block allows to set a width and height on the element. Also, with display: inline-block , 
+                    the top and bottom margins/paddings are respected, but with display: inline they are not.*/
+                }
+                .div3 > p {
+                    display: inline-block;
+                    width: 140px;
+                }
+                .div3>p:first-child{
+                   opacity:0;
+                }
+                .div3 > p:nth-child(2) {
+                   opacity: .3;
+                }
+                .div3 > p:nth-child(3) {
+                    opacity: .5;
+                }
+                .div3 > p:nth-child(4) {
+                  opacity: .7;
+                }
+                .div3 > p:last-child {
+                   opacity: 1;
+                }
+                .div4 > p {
+                    display: inline-block;
+                    width: 140px;
+                }
+                .div4 > p:nth-child(3) {
+                  visibility: hidden;
+                }
+
+                .div5 > p {
+                    display: inline-block;
+                    width: 140px;
+                }
+
+                .div5 > p:nth-child(3) {
+                    display:none;
+                }
+
+            </style>
+        </head>
+        <body>
+            <h2> Page Layout in Styling</h2>
+            <h4> <span style=" color:red"> display </span> three paragraph <span style=" color:brown">inline</span></h4>
+            <div class="div1">
+                <p>Euismod rerum? Distinctio dolorem, lectus architecto necessitatibus gravida purus? Modi minima, optio metus odio sodales aut, morbi. Semper repudiandae urna mollis. Integer sint aliquam mollis class adipisicing ullamco pede iste qui convallis modi sapiente irure nullam aspernatur penatibus magna, anim phasellus aspernatur aenean phasellus? Ipsa iure eleifend cumque fugiat magni.</p>
+
+                <p>Malesuada blandit cursus fringilla iusto quaerat, repellat mollit! Omnis iaculis, pariatur ipsa placerat magnis officia, fugiat culpa mollitia! Urna aenean rutrum quas. Dui pulvinar? Laudantium maiores urna convallis! Justo! Proin accusamus, ipsa beatae, curae volutpat lectus. Maxime senectus? Assumenda, sociosqu animi venenatis. Potenti alias potenti architecto necessitatibus! Sit! Dolore etiam.</p>
+
+                <p>Perspiciatis error etiam malesuada asperiores dolorem odit sint proident magna diamlorem totam cursus elit? Incidunt sunt? Quod ipsum, sapien montes. Per excepteur delectus dolores officia perferendis, varius! Ultrices reiciendis integer. Placerat magna turpis tempus, eaque aliquid facilis itaque minim fusce primis eos. Commodo vulputate, natoque, incididunt molestie. Massa saepe autem.</p>
+            </div>
+            <p style="font-style:italic">
+                The display: inline-block Value. Compared to display: inline , the major difference is that display:
+                inline-block allows to set a width and height on the element. Also, with display: inline-block ,
+                the top and bottom margins/paddings are respected, but with display: inline they are not.
+            </p>
+            <h4>
+                <span style=" color:red"> display </span> five paragraph <span style=" color:brown">inline-block</span> and <span style=" color:red">width :</span>
+                <span style=" color:brown">inline-140px</span>
+            </h4>
+            <div class="div2">
+                <p>Paragraph-1</p>
+                <p>Paragraph-2</p>
+                <p>Paragraph-3</p>
+                <p>Paragraph-4</p>
+                <p>Paragraph-5</p>
+
+            </div>
+            <h4>
+                <span style=" color:red"> display </span> five paragraph <span style=" color:brown">inline-block</span> and <span style=" color:red">width :</span>
+                <span style=" color:brown">inline-140px</span> different level of <span style=" color:red">optacity</span> ranges from
+                <span style="color:brown">0 to 1</span>
+            </h4>
+            <div class="div3">
+                <p>Paragraph-1</p>
+                <p>Paragraph-2</p>
+                <p>Paragraph-3</p>
+                <p>Paragraph-4</p>
+                <p>Paragraph-5</p>
+
+            </div>
+
+            <h4>
+                <span style=" color:red"> display </span> five paragraph <span style=" color:brown">inline-block</span> and <span style=" color:red">width :</span>
+                <span style=" color:brown">inline-140px</span> Paragraph-3f <span style=" color:red"> visibility </span>
+                <span style="color:brown">hidden</span>
+            </h4>
+            <div class="div4">
+                <p>Paragraph-1</p>
+                <p>Paragraph-2</p>
+                <p>Paragraph-3</p>
+                <p>Paragraph-4</p>
+                <p>Paragraph-5</p>
+
+            </div>
+
+            <h4>
+                <span style=" color:red"> display </span> five paragraph <span style=" color:brown">inline-block</span> and <span style=" color:red">width :</span>
+                <span style=" color:brown">inline-140px</span> Paragraph-3 <span style=" color:red"> display</span>
+                <span style="color:brown"> none</span>
+            </h4>
+            <div class="div5">
+                <p>Paragraph-1</p>
+                <p>Paragraph-2</p>
+                <p>Paragraph-3</p>
+                <p>Paragraph-4</p>
+                <p>Paragraph-5</p>
+
+            </div>
+        </body>
+    </html>

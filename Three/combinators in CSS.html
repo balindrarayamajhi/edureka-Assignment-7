@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Combinators in CSS</title>
+        <style>
+            /*all span-descendent of divs 
+                space is ancestor descesotr combinator */
+            div span{
+                color:red;
+            }
+            /* parent-child combinatro*/
+             div>span{
+                 font-size:1.5em;
+             }
+
+             div.secondary-content span{
+                 color:blue;
+             }
+        </style>
+    </head>
+    <body>
+        <h3>Combinators in CSS</h3>
+        <div>
+            <span> Span directly child of div</span>
+            <p>Para 1</p>
+            <p>Para 2</p>
+            <p>
+                <span> Span1 in para 3</span>
+                <span> Span2 in para 3</span>
+                <span> Span3 in para 3</span>
+            </p>
+            <p>Para 4</p>
+        </div>
+
+        <div class="secondary-content">
+            <p>Para 1</p>
+            <p>Para 2</p>
+            <p>
+                <span> Span1 in para 3</span>
+                <span> Span2 in para 3</span>
+                <span> Span3 in para 3</span>
+            </p>
+            <p>Para 4</p>
+        </div>
+    </body>
+</html>

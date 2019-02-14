@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)file:///Users/balindrarayamajhi/EdurekaWebDevelopment/ModuleSeven/contact.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width,intial scale=1">
+    <script src="./Contact Us_files/jquery.min.js"></script>
+    <script src="./Contact Us_files/bootstrap.min.js"></script>
+    <link href="./Contact Us_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Contact Us_files/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./Contact Us_files/all.min.css">
+    <link href="file:///Users/balindrarayamajhi/EdurekaWebDevelopment/ModuleSeven/images/edureka-logo.png" type="image/png" rel="shortcut icon">
+    <title> Contact Us</title>
+    <style>
+        body{
+            margin-top:70px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#primary-menu" data-toggle="collapse">
+                            Menu
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                        </button>
+                        <div class="navbar-brand">
+                                <a href="file:///Users/balindrarayamajhi/EdurekaWebDevelopment/ModuleSeven/index.html">edureka!</a>
+                        </div>
+                    </div>
+        
+                    <div class="collapse navbar-collapse" id="primary-menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="file:///Users/balindrarayamajhi/EdurekaWebDevelopment/ModuleSeven/ourstory.html">Our Story</a></li>
+                            <!--<li><a href="courses.html">Courses</a></li>-->
+                            <li class="dropdown">
+                                <a href="file:///Users/balindrarayamajhi/EdurekaWebDevelopment/ModuleSeven/contact.html#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Courses
+                                    <i class="caret"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="file:///Users/balindrarayamajhi/EdurekaWebDevelopment/ModuleSeven/programingandframewrok.html">Programing and Frameworks</a></li>
+                                    <li><a href="file:///Users/balindrarayamajhi/EdurekaWebDevelopment/ModuleSeven/devopscerticication.html">DevOps Certification Training</a></li>
+                                    <li><a href="file:///Users/balindrarayamajhi/EdurekaWebDevelopment/ModuleSeven/bigdata.html">Big Data</a></li>
+        
+                                </ul>
+                            </li>
+                            <li><a href="file:///Users/balindrarayamajhi/EdurekaWebDevelopment/ModuleSeven/signup.html">Sign-up</a></li>
+                            <li><a href="file:///Users/balindrarayamajhi/EdurekaWebDevelopment/ModuleSeven/faqs.html">FAQs</a></li>
+                            <li><a href="file:///Users/balindrarayamajhi/EdurekaWebDevelopment/ModuleSeven/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+    </div></nav>
+
+    <label class="container">
+        
+        <form action="file:///Users/balindrarayamajhi/EdurekaWebDevelopment/ModuleSeven/contact.html" method="POST" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <legend>Contact Form</legend>
+                </div>
+        
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-md-offset-1" for="name">Name</label>
+                    <div class="col-md-7">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name">
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-md-offset-1" for="email">Email</label>
+                    <div class="col-md-7">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email">
+    
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-2 col-md-offset-1" for="message">Email</label>
+                    <div class="col-md-7">
+                        <textarea rows="4" name="email" class="form-control" id="message" placeholder="Type your message"></textarea>
+    
+                    </div>
+                </div>
+
+            <div class="checkbox"> 
+                    <label class="control-label col-md-2 col-md-offset-1" for="contact-checkbox-grp-pos">Position</label>
+                    <div class="col-mod-7" id="contact-checkbox-grp-pos"> 
+
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="pos-checkbox" value="data-scientist" id="contact-checkbox-grp-pos">
+                        Data Scientist
+                    </label>
+
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="pos-checkbox" value="system-engineer" id="contact-checkbox-grp-pos">
+                        System Engineer
+                    </label>
+
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="pos-checkbox" value="software-developer" id="contact-checkbox-grp-pos">
+                        Software Developer
+                    </label>
+            
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="pos-checkbox" value="automation-testing" id="contact-checkbox-grp-pos">
+                        Automation Testing
+                    </label>
+                </div>
+            </div>
+            
+                
+                
+                
+            <div class="radio">
+                <label class="control-label col-md-2 col-md-offset-1" for="contact-checkbox-prefer">What you prefer</label>
+                <div class="col-mod-7"> 
+                        <label class="radio-inline">
+                            <input type="radio" name="prefer" id="contact-checkbox-prefer" value="instructor-led-online-courses" checked="checked">
+                            instructor-led online courses
+                        </label>
+                        <label class="radio-inline">
+                                <input type="radio" name="prefer" id="contact-checkbox-prefer" value="self-paced-courses" checked="checked">
+                                Self-paced courses
+                        </label>
+                        <label class="radio-inline">
+                                <input type="radio" name="prefer" id="contact-checkbox-prefer" value="classroom-courses" checked="checked">
+                                Classroom courses
+                        </label>
+                </div>
+            </div>
+               
+            <div class="form-group">
+                <label class="control-label col-md-2 col-md-offset-1" for="contact-findus">How you find us</label>
+                <div class="col-md-7"> 
+                
+                <select name="findus" id="contact-findus" class="form-control">
+                    <option value="friend">Freinds</option>
+                    <option value="family">Family</option>
+                </select>
+
+                <select name="findus" id="contact-findus" class="form-control">
+                        <option value="family">Family</option>
+                        <option value="family">Family</option>
+                </select>
+                
+                
+            </div>   
+            </div>
+                
+            
+        </form>
+        
+    
+    <footer class="text-center" style="margin-top:20px;margin-bottom:15px">
+            Copyright @copy; 2019 Brain4ce Education Solutions Pvt. Ltd. All rights Reserved.
+            <a href="file:///Users/balindrarayamajhi/EdurekaWebDevelopment/ModuleSeven/contact.html#tnc-dailog" data-toggle="modal">Terms and Conditions</a>
+    
+    </footer>
+    <div class="modal fade" id="tnc-dailog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Terms and Conditions</h4>
+                </div>
+                <div class="modal-body">
+                        <p>Last updated: January 21, 2019</p>
+                        <p>
+                            Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using
+                            the http://www.edureka.co (change this) website and the My Mobile App (change this) mobile
+                            application (the "Service") operated by My Company (change this) ("us", "we", or "our").
+                        </p>
+                        <p>
+                            Your access to and use of the Service is conditioned on your acceptance of and compliance with
+                            these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+                        </p>
+                        <p>
+                            By accessing or using the Service you agree to be bound by these Terms. If you disagree
+                            with any part of the terms then you may not access the Service.
+                        </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</label></body></html>

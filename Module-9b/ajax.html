@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    <title> Ajax </title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="test">
+
+    </div>
+    <script>
+        var xhr = new XMLHttpRequest();
+
+        xhr.addEventListener('readystatechange', function() {
+
+            if (xhr.status >= 200 && xhr.status < 300 && xhr.readyState === 4) {
+                console.log("Status 4");
+                document.getElementById('test').innerHTML = xhr.responseText;
+            } else if (xhr.readyState > 400) {
+                alert("coudnot retrieve " + url)
+            }
+        })
+        xhr.open('GET', 'test1.txt', true);
+        console.log("readyState :" + xhr.readyState)
+        xhr.send();
+    </script>
+</body>
+
+</html>

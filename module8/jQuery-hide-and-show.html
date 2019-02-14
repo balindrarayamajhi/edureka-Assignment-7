@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src=jquery-3.3.1.min.js></script>
+    <link rel="stylesheet" type="text/css" href="fontawesome-5.6.3/css/all.min.css">
+    <title>Hide and Show</title>
+    <style>
+        .message-sucess {
+            background-color: lightgreen;
+        }
+        
+        .message-failure {
+            background-color: lightpink;
+        }
+        
+        .message {
+            margin: 20px 5px;
+            padding: 10px;
+            border: 1px solid crimson;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message message-sucess">
+        Message 1
+    </div>
+
+    <button id="btn-hide">Hide</button>
+    <button id="btn-show">Show</button>
+
+    <div class="message message-failure">
+        Message-2
+    </div>
+    <button id="btn-hide-show">Toggle</button>
+    <script>
+        $('document').ready(function() {
+
+            $('.message').on({
+                click: function($event) {
+                    console.log("click : ", $(this).html());
+                    console.log($event);
+                },
+                dblclick: function($event) {
+                    console.log("dblclick : ", $(this).html());
+                    console.log($event);
+                },
+                mouseenter: function() {
+                    console.log("mouseenter : ", $(this).html());
+                }
+            });
+
+            $('#btn-hide').click(function() {
+                $('.message-sucess').hide();
+            })
+            $('#btn-show').click(function() {
+                $('.message-sucess').show();
+            })
+            $('#btn-hide-show').click(function() {
+                $('.message-failure').toggle();
+            })
+        })
+    </script>
+
+
+</body>
+
+</html>

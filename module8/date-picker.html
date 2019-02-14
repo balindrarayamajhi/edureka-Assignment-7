@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src=jquery-3.3.1.min.js></script>
+    <script src=jquery-ui/jquery-ui.min.js></script>
+    <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.theme.min.css">
+    <title>Date Picker</title>
+</head>
+
+<body>
+
+    <input type="text" id="start-date1" />
+    <input type="text" id="start-date2" />
+    <input type="text" id="start-date3" />
+    <input type="text" id="start-date4" />
+    <input type="text" id="start-date5" />
+    <input type="text" id="start-date6" />
+
+
+    <script>
+        $(document).ready(function() {
+            $('#start-date1').datepicker({
+                minDate: 0,
+                maxDate: 180,
+
+
+            });
+            $('#start-date2').datepicker({
+
+                minDate: 'new Date()+1',
+                maxDate: 180,
+                changeMonth: true,
+
+            });
+
+            $('#start-date3').datepicker({
+                minDate: '01-01-2019',
+                maxDate: 180,
+                changeMonth: true,
+                changeYear: true,
+
+
+            });
+
+            $('#start-date4').datepicker({
+                minDate: '01-01-2019',
+                maxDate: 180,
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: 'D, dd-M-yy'
+
+            });
+
+            $('#start-date5').datepicker({
+                minDate: '2019-01-01',
+                maxDate: 180,
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: 'yy-mm-dd',
+                onSelect: function(selected, event) {
+                    console.log(selected)
+                }
+
+            });
+            $('#start-date6').datepicker({
+                minDate: '01/30/19',
+                maxDate: 180,
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: 'mm/dd/y'
+
+            });
+
+
+        })
+    </script>
+</body>
+
+</html>

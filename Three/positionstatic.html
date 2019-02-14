@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>position static</title>
+        <style>
+            div {
+                position:relative;
+                margin: 40px;
+                padding: 10px;
+                height: 40px;
+            }
+            #first{
+                border: 3px dotted red;
+            }
+            #second {
+                border: 3px solid blue;
+            }
+            #third {
+                border: 3px dashed black;
+            }
+            #fourth {
+                border: 3px solid yellow;
+            }
+            div:first-child{
+                top:50px;
+                right:50px;
+            }
+            div:nth-child(3){
+                top:70px;
+                left:80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="first"> div 1</div>
+        <div id="second"> div 2</div>
+        <div id="third"> div 3</div>
+        <div id="fourth"> div 4</div>
+    </body>
+</html>

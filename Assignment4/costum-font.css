@@ -1,0 +1,8 @@
+﻿@font-face {
+    src: url(fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf);
+    font-family:'customfont1';
+}
+@font-face {
+    src: url(fonts/Open_Sans_Condensed/OpenSansCondensed-Bold.ttf);
+    font-family: 'customfont2';
+}

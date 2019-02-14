@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src=jquery-3.3.1.min.js></script>
+    <link rel="stylesheet" type="text/css" href="fontawesome-5.6.3/css/all.min.css">
+    <title>Introduction to jQuery</title>
+    <style>
+        #success-msg {
+            background-color: lightgreen;
+        }
+        
+        #failure-msg {
+            background-color: lightpink;
+        }
+        
+        div {
+            margin: 20px 5px;
+            padding: 10px;
+            border: 1px solid crimson;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="firstdiv">
+        This is test div.
+    </div>
+    <div class="message" id="success-msg">
+
+    </div>
+    <div class="message" id="failure-msg">
+
+    </div>
+    <p>Name<input type="text" id="name" name="name" value="Ranjan Shrestha" /></p>
+    <p><input type="button" id="btnLogName" value="Log name's value in alert" /></p>
+    <script>
+        var $collections = $('.message');
+        console.log($collections);
+        $('document').ready(function() {
+            //$('.message').html('Rejina Shrestha<br/>6741 Beacon Hill Dr<br/> Pittsburgh,PA 15221<br/>');
+            $collections.html('Rejina Shrestha<br/>6741 Beacon Hill Dr<br/> Pittsburgh,PA 15221<br/>');;
+            console.log($collections.html());
+            $collections.css({
+
+                'font-size': '1.5em',
+                color: 'brown'
+            })
+            $('#btnLogName').click(function() {
+                alert($('[name="name"]').val());
+            })
+
+        });
+        console.log($('div').html());
+        console.log($collections.html());
+    </script>
+
+
+</body>
+
+</html>

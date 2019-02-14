@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.theme.min.css">
+    <title>Spinner</title>
+
+
+</head>
+
+<body>
+    <input type="text" id="quantity" />
+
+    <script>
+        $(document).ready(function() {
+            $('#quantity').spinner({
+                min: 0,
+                max: 10,
+                step: 0.5,
+
+            });
+
+            $('#quantity').keydown(function($event) {
+                $event.preventDefault()
+            })
+        })
+    </script>
+</body>
+
+</html>

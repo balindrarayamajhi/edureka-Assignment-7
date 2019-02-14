@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <script src=jquery-3.3.1.min.js></script>
+    <script src=jquery-ui/jquery-ui.min.js></script>
+    <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.theme.min.css">
+    <title>Date Picker</title>
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+
+</head>
+
+<body>
+
+    <input type="text" id="date-picker" />
+
+
+
+    <script>
+        $(document).ready(function() {
+            function isInvalid() {
+                return true;
+            }
+
+            $('#date-picker').datepicker({
+                minDate: new Date(),
+                maxDate: 180,
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: 'D, dd-M-yy',
+                onSelect: function(selected, event) {
+                    console.log(selected)
+                    console.log(event)
+                    if (isInvalid(selected)) {
+                        setTimeout(function() {
+                            $('#date-picker').val('')
+                        }, 1000)
+
+                    }
+
+                }
+            });
+
+
+        })
+    </script>
+</body>
+
+</html>

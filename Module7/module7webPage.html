@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,intial scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap-3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="fontawesome-5.6.3/css/all.min.css">
+
+    <style>
+        h3, h4 {
+            font-weight: bold;
+            color: blue;
+        }
+
+        #bg {
+            margin: 10px 0px;
+            padding: 5px 0px;
+            border: 1px solid black;
+            border-radius: 4px;
+            background-color: lightgray;
+        }
+
+        body {
+            margin-top: 60px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <title> My webpage</title>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-target="#primary-menu" data-toggle="collapse">
+                    Menu
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                </button>
+                <div class="navbar-brand">
+                    edureka!
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="ourstory.html">Our Story</a></li>
+                    <!--<li><a href="courses.html">Courses</a></li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Courses
+                            <i class="caret"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cwd.html">Complete Web Developer</a></li>
+                            <li><a href="node.html">Node JS</a></li>
+                            <li><a href="angular.html">Angular</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="signup.html">Sign-up</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="carousel slide" data-ride="carousel slide" data-interval="5000" id="main-carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#main-carousel" data-slide-to="1"></li>
+                <li data-target="#main-carousel" data-slide-to="2"></li>
+                <li data-target="#main-carousel" data-slide-to="3"></li>
+                <li data-target="#main-carousel" data-slide-to="4"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active ">
+                    <img src="images/java.jpeg" style="width:100%;height:400px;" />
+                    <div class="carousel-caption">
+                        <h1>Just Learn It</h1>
+                        <p>Wnated to learn something new.Just do it</p>
+                        <button class="btn btn-primary" href="signup.html" role="button">Sign up</button>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <img src="images/javascript .jpg" style="width:100%;height:400px;" />
+                    <div class="carousel-caption">
+                        <h1>Just Learn It</h1>
+                        <p>Wnated to learn something new.Just do it</p>
+                        <button class="btn btn-primary" href="signup.html" role="button">Sign up</button>
+                    </div>
+                </div>
+                <div class="item ">
+                    <img src="images/first.webp" style="width:100%;height:400px;" />
+                    <div class="carousel-caption">
+                        <h1>Just Learn It</h1>
+                        <p>Wnated to learn something new.Just do it</p>
+                        <button class="btn btn-primary" href="signup.html" role="button">Sign up</button>
+                    </div>
+                </div>
+                <div class="item ">
+                    <img src="images/jqeury.png" style="width:100%;height:400px;" />
+                    <div class="carousel-caption">
+                        <h1>Just Learn It</h1>
+                        <p>Wanted to learn something new.Just do it</p>
+                        <button class="btn btn-primary" href="signup.html" role="button">Sign up</button>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <img src="images/python.png" style="width:100%;height:400px;" />
+                    <div class="carousel-caption">
+                        <h1>Just Learn It</h1>
+                        <p>Wanted to learn something new.Just do it</p>
+                        <button class="btn btn-primary" href="signup.html" role="button">Sign up</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <a class="left carousel-control" href="#main-carousel" data-slide="prev">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+            </a>
+
+            <a class="right carousel-control" href="#main-carousel" data-slide="next">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <h2 style="margin-top:50px; margin-bottom:60px;">
+
+                Instructor-led live online courses with 24*7 on demand support
+            </h2>
+            <div class="col-md-4">
+                <img src="images/liveclass.png" style="height:140px;" />
+                <h3>Live classes</h3>
+                <p>Learn from our experts and get real-time guidance</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/schedule.png" style="height:140px;"  />
+                <h3>Flexible schedule</h3>
+                <p> Reschedule your batch/class at your convenience</p>
+            </div>
+            <div class="col-md-4">
+                 <img src="images/support.png" style="height:140px;"/>
+                 <h3>24*7 Support</h3>
+                 <p>Personalized guidance from our 24*7 Support Team</p>
+            </div>
+         </div>
+     </div>
+
+    <div class="container">
+        <div class="row">
+            <h2 class="text-center" style="margin-top:60px; margin-bottom:60px;">
+
+                Fresh Baked Courses
+            </h2>
+            <div class="col-md-2">
+                <img src="images/nodejs.png" style="width:100%;height:100px;margin-bottom:10px" />
+                <hr />
+                <h4>NodeJS Certification Trainning</h4>
+                <ul>
+                    <li><i class="fas fa-info"></i> 38k Enrolled Learners</li>
+                    <li><i class="fas fa-calendar-week"> </i> Weekend/Weekday</li>
+                    <li><i class="fas fa-video"></i> Live Class</li>
+                </ul>
+                <a href="#" class="btn btn-success btn-sm" role="button" style="margin-top:15px">Learn More</a>
+
+            </div>
+
+            <div class="col-md-2">
+                <img src="images/hibernate.png" style="width:100%;height:100px;margin-bottom:10px" />
+                <hr />
+                <h4>Hibernate Certification Trainning</h4>
+                <ul>
+                    <li><i class="fas fa-info"></i> 38k Enrolled Learners</li>
+                    <li><i class="fas fa-calendar-week"> </i> Weekend/Weekday</li>
+                    <li><i class="fas fa-video"></i> Live Class</li>
+                </ul>
+                <a href="#" class="btn btn-success btn-sm" role="button" style="margin-top:15px">Learn More</a>
+
+            </div>
+
+            <div class="col-md-2">
+                <img src="images/spring.png" style="width:100%;height:100px;margin-bottom:10px" />
+                <hr />
+                <h4>Spring Certification Trainning</h4>
+                <ul>
+                    <li><i class="fas fa-info"></i> 38k Enrolled Learners</li>
+                    <li><i class="fas fa-calendar-week"> </i> Weekend/Weekday</li>
+                    <li><i class="fas fa-video"></i> Live Class</li>
+                </ul>
+                <a href="#" class="btn btn-success btn-sm" role="button" style="margin-top:15px">Learn More</a>
+
+            </div>
+
+            <div class="col-md-2">
+                <img src="images/python.png" style="width:100%;height:100px;margin-bottom:10px" />
+                <hr />
+                <h4>Python Certification Trainning</h4>
+                <ul>
+                    <li><i class="fas fa-info"></i> 38k Enrolled Learners</li>
+                    <li><i class="fas fa-calendar-week"> </i> Weekend/Weekday</li>
+                    <li><i class="fas fa-video"></i> Live Class</li>
+                </ul>
+                <a href="#" class="btn btn-success btn-sm" role="button" style="margin-top:15px">Learn More</a>
+
+            </div>
+
+            <div class="col-md-2">
+                <img src="images/springboot.png" style="width:100%;height:100px;margin-bottom:10px" />
+
+                <hr />
+                <h4>Spring Boot Certification Trainning</h4>
+                <ul>
+                    <li><i class="fas fa-info"></i> 38k Enrolled Learners</li>
+                    <li><i class="fas fa-calendar-week"> </i> Weekend/Weekday</li>
+                    <li><i class="fas fa-video"></i> Live Class</li>
+                </ul>
+                <a href="#" class="btn btn-success btn-sm" role="button" style="margin-top:15px">Learn More</a>
+
+            </div>
+
+            <div class="col-md-2">
+                <img src="images/react.png" style="width:100%;height:100px;margin-bottom:10px" />
+                <hr />
+                <h4>ReactJS Certification Trainning</h4>
+                <ul>
+                    <li><i class="fas fa-info"></i> 38k Enrolled Learners</li>
+                    <li><i class="fas fa-calendar-week"> </i> Weekend/Weekday</li>
+                    <li><i class="fas fa-video"></i> Live Class</li>
+                </ul>
+                <a href="#" class="btn btn-success btn-sm" role="button" style="margin-top:15px">Learn More</a>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center" style="margin-top:40px;margin-bottom:20px">
+        Copyright @copy; 2019 Brain4ce Education Solutions Pvt. Ltd. All rights Reserved.
+        <a href="#tnc-dailog" data-toggle="modal">Terms and Conditions</a>
+
+
+    </footer>
+
+    <div class="modal fade" tabindex="-1" id="tnc-dailog">
+        <div class="container" style="margin:15%;width:60%">
+            <div class="modal-dailog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Terms and Conditions</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>Last updated: January 21, 2019</p>
+                        <p>
+                            Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using
+                            the http://www.mywebsite.com (change this) website and the My Mobile App (change this) mobile
+                            application (the "Service") operated by My Company (change this) ("us", "we", or "our").
+                        </p>
+                        <p>
+                            Your access to and use of the Service is conditioned on your acceptance of and compliance with
+                            these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+                        </p>
+                        <p id="magnify">
+                            By accessing or using the Service you agree to be bound by these Terms. If you disagree
+                            with any part of the terms then you may not access the Service.
+                        </p>
+                        <h4>Purchases</h4>
+                        <p>
+                            If you wish to purchase any product or service made available through the Service ("Purchase"),
+                            you may be asked to supply certain information relevant to your Purchase including, without
+                            limitation, your …
+                        </p>
+                        <p id="bg">
+                            The Purchases section is for businesses that sell online (physical or digital). For the full
+                            disclosure section, <a href="_blank">create your own Terms and Conditions.</a>
+                        </p>
+                        <h4>Subscriptions</h4>
+                        <p>
+                            Some parts of the Service are billed on a subscription basis ("Subscription(s)"). You will be billed in
+                            advance on a recurring ...
+                        </p>
+                        <p id="bg">
+                            The Subscriptions section is for SaaS businesses. For the full disclosure section,
+                            <a href="_blank">create your own Terms and Conditions.</a>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-primary" value="close" data-dismiss="modal" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

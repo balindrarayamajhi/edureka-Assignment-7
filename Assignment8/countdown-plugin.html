@@ -1,0 +1,56 @@
+<!-- the problem statement for the assignment states to create a countdown timer for 2017 new year 
+using keith-wood countdown plugin but for now if i create ountdown timer for 2017 new year then it 
+will give 0 hours 0 mins o sec as this date has been alreday passed so this solution is creating
+countdown timer for the upcoming new year as the year is not hard coded to '2020',it will always 
+give countdown timer for upcoming new year. 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,intial scale=1" />
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery.countdown.package-2.1.0/js/jquery.plugin.min.js"></script>
+    <script src="jquery.countdown.package-2.1.0/js/jquery.countdown.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.countdown.package-2.1.0/css/jquery.countdown.css">
+    <title>Countdown timer plugin</title>
+    <style>
+        #newyear-countdown {
+            margin: 10px;
+            overflow: hidden;
+            width: 50%;
+            color: red
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="newyear-countdown">
+
+    </div>
+    <script>
+        $(document).ready(function() {
+            var newYearDate = new Date()
+            newYearDate.setFullYear(newYearDate.getFullYear() + 1)
+            newYearDate.setMonth(0)
+            newYearDate.setDate(1)
+
+            $('#newyear-countdown').countdown({
+
+                until: newYearDate
+            })
+            console.log(newYearDate)
+            console.log('Year: ' + newYearDate.getFullYear())
+        })
+    </script>
+
+</body>
+
+</html>
+
+</html>
+
+</html>

@@ -1,0 +1,54 @@
+﻿        <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="utf-8" />
+                <title></title>
+            </head>
+            <body>
+                <h1>Introduction to HTML</h1>
+                <h2>Module 1: Formsi n HTML </h2>
+                <form action="processForm1.html" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" value="Balindra" />
+
+                    <label for="age">Age</label>
+                    <input type="text" id="age" name="age" value="31" />
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" />
+
+                    <label for="comments">Commenmts</label>
+                    <textarea id="comments" name="comments"></textarea>
+
+                    <label for="cities">Cities</label>
+                    <select id="cities" name="cities">
+                        <option>Newyork</option>
+                        <option>Pittsburgh</option>
+                        <option>Chicago</option>
+                        <option>Columbus</option>
+                    </select>
+
+                    <label for="preferredcity"> Preferred City</label>
+
+                    <select id="preferredcities" name="preferredcities" multiple="multiple">
+                        <option value="NYC">Newyork</option>
+                        <option value="PIT">Pittsburgh</option>
+                        <option value="CIG">Chicago</option>
+                        <option value="CLB">Columbus</option>
+                    </select>
+                    <!---check box is multi select-->
+                    <label> <input type="checkbox" name="courses" value="webdevelopment" />Web Development</label>
+                    <label> <input type="checkbox" name="courses" value="piano" />Piano</label>
+                    <label> <input type="checkbox" name="courses" value="tennis" />Web Tennins</label>
+
+                    <!---radio button is multi select-->
+                    <label> <input type="radio" name="courses" value="webdevelopment" />Web Development</label>
+                    <label> <input type="radio" name="courses" value="piano" />Piano</label>
+                    <label> <input type="radio" name="courses" value="tennis" />Web Tennins</label>
+
+                    <input type="submit" value="Sign Me Up" />
+                    <input type="reset" value="Reset" />
+                </form>
+
+            </body>
+        </html>

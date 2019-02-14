@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,intial-scale=1" />
+
+    <title> Canvas</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="my-canvas" height="300" width="400">
+        Canvas is not supported in your browser.
+
+    </canvas>
+    <canvas id="my-canvas1" height="300" width="400">
+            Canvas is not supported in your browser.
+    
+        </canvas>
+    <script>
+        window.onload = function() {
+            var canvas = document.getElementById('my-canvas');
+            var ctx = canvas.getContext('2d');
+            ctx.moveTo(100, 100);
+            ctx.lineTo(200, 200);
+            ctx.stroke();
+
+            var canvas1 = document.getElementById('my-canvas1');
+            var ctx1 = canvas.getContext('2d');
+            ctx1.moveTo(100, 100);
+            ctx1.lineTo(200, 200);
+            ctx1.stroke();
+
+        }
+    </script>
+</body>
+
+</html>

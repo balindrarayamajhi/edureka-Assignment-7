@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,intial scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap-3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <title> Second Problem Solution</title>
+    <style>
+        .panel-default:first-child > .panel-heading,.panel-default:first-child .panel-body {
+            color: red;
+        }
+        
+        .panel-default:last-child > .panel-heading,.panel-default:last-child .panel-body {
+            color: blue;
+        }
+
+
+        .panel-default:nth-child(2) > .panel-heading,.panel-default:nth-child(2) .panel-body {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel-group" id="paneltest">
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+
+                    <div class="panel-title" data-target="#panel-1-container" data-toggle="collapse" data-parent="#paneltest">
+                        This is the first panel.
+                    </div>
+                </div>
+                <div class="collapse panel-collapse in" id="panel-1-container">
+                    <div class="panel-body">
+                        <p>Here is the content of accordion of the first panel.</p>
+                        <p>Enjoy this experience!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    <div class="panel-title" data-target="#panel-2-container" data-toggle="collapse" data-parent="#paneltest">
+                        This is the second panel.
+                    </div>
+                </div>
+                <div class="collapse panel-collapse" id="panel-2-container">
+                    <div class="panel-body">
+                        <p>Here is the content of accordion of the second panel.</p>
+                        <p>Enjoy this experience!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    <div class="panel-title" data-target="#panel-3-container" data-toggle="collapse" data-parent="#paneltest">
+                        This is the third panel.
+                    </div>
+                </div>
+                <div class="collapse panel-collapse" id="panel-3-container">
+                    <div class="panel-body">
+                        <p>Here is the content of accordion of the third panel.</p>
+                        <p>Enjoy this experience!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

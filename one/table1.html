@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tables in HTML</title>
+        <style>
+            table,td,th{
+                border: 1px solid red;
+                border-collapse:collapse;
+            }
+            td,th{
+                padding:8px;
+            }
+            /*
+            tr:nth-child(even){
+                background-color:lightgreen;
+
+            }
+               */
+
+        </style>
+    </head>
+    <body>
+        <h1>Introduction to HTML</h1>
+        <h2>Tables in HTML </h2>
+        <table>
+            <caption>Ticket sales for carnival </caption>
+            <thead>
+                <tr>
+                    <th> Name </th>
+                    <th> Quantity</th>
+                    <th>Price/Ticket</th>
+                    <th>Total</th>
+                    <th>Email</th>
+                </tr>
+            </thead> 
+            <tbody>
+                <tr>
+                    <td rowspan="2"> Mark</td>
+                    <td rowspan="2"> 20</td>
+                    <td rowspan="2">5</td>
+                    <td rowspan="2">100</td>
+                    <td>mark@example.com</td>
+                </tr>
+
+                <tr>
+                    <td>mark@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td> Susan</td>
+                    <td> 15</td>
+                    <td>3</td>
+                    <td>45</td>
+                    <td>susan@example.com</td>
+                </tr>
+
+                <tr>
+                    <td> Alexa</td>
+                    <td> 10</td>
+                    <td>7.5</td>
+                    <td>75</td>
+                    <td>alexa@example.com</td>
+                </tr>
+
+                <tr>
+                    <td>Jason</td>
+                    <td> 10</td>
+                    <td>5</td>
+                    <td>50</td>
+                    <td>jason@example.com</td>
+                </tr>
+
+                <tr>
+                    <td>Adam</td>
+                    <td> 13</td>
+                    <td>4</td>
+                    <td>52</td>
+                    <td>adam@example.com</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </body>
+</html>

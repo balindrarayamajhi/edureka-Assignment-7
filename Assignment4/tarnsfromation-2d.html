@@ -1,0 +1,235 @@
+﻿<!--Solution of the third problem-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>transformation 2d</title>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                width: 150px;
+                height: 150px;
+                border: 1px solid black;
+                float: left; 
+                margin: 65px 65px;
+            }
+            img {
+                width: 150px;
+                height: 130px;
+                border-bottom:1px solid red;
+            }
+            .rotate30 {
+                -webkit-transform: rotate(30deg);
+                -moz-transform: rotate(30deg);
+                -o-transform: rotate(30deg);
+                transform: rotate(30deg);
+            }
+            .rotate60 {
+                -webkit-transform: rotate(60deg);
+                -moz-transform: rotate(60deg);
+                -o-transform: rotate(60deg);
+                transform: rotate(60deg);
+            }
+            span.title{
+                display:inline-block;
+                text-align:center;
+                font-size:1.5em;
+            }
+            div{
+                float:left;
+                overflow:auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <span class="title"> Dispalying five pictures </span>
+            <ul>
+                <li>
+                    <img src="images/img1.jpg" />
+                    <span class="image-name">First image </span>
+                </li>
+                <li>
+                    <img src="images/img2.jpg" />
+                    <span class="image-name">Seocond image </span>
+                </li>
+                <li>
+                    <img src="images/img3.png" />
+                    <span class="image-name">Third image </span>
+                </li>
+                <li>
+                    <img src="images/img4.jpeg" />
+                    <span class="image-name">Fourth image </span>
+                </li>
+
+                <li>
+                    <img src="images/img5.jpg" />
+                    <span class="image-name">Fifth image </span>
+                </li>
+
+            </ul>
+        </div>
+        <div>
+            <span class="title">
+                Roatating the First image in respective degrees
+            </span> 
+
+           <ul>
+            <li class="rotate30">
+                <img src="images/img1.jpg" />
+                <span class="image-name">30 deg roatated </span>
+            </li>
+
+            <li class="rotate60">
+                <img src="images/img1.jpg" />
+                <span class="image-name">60 deg roatated </span>
+            </li>
+
+            <li class="rotate30">
+                <img src="images/img1.jpg" />
+                <span class="image-name">30 deg roatated </span>
+            </li>
+            <li class="rotate30">
+                <img src="images/img1.jpg" />
+                <span class="image-name">30 deg roatated </span>
+            </li>
+            <li class="rotate60">
+                <img src="images/img1.jpg" />
+                <span class="image-name">60 deg roatated </span>
+            </li>
+
+        </ul>
+            </div>
+
+        <div>
+            <span class="title">
+                Roatating the second image in respective degrees
+            </span>
+            <ul>
+                <li class="rotate30">
+                    <img src="images/img2.jpg" />
+                    <span class="image-name">30 deg roatated </span>
+                </li>
+
+                <li class="rotate60">
+                    <img src="images/img2.jpg" />
+                    <span class="image-name">60 deg roatated </span>
+                </li>
+
+                <li class="rotate30">
+                    <img src="images/img2.jpg" />
+                    <span class="image-name">30 deg roatated </span>
+                </li>
+                <li class="rotate30">
+                    <img src="images/img2.jpg" />
+                    <span class="image-name">30 deg roatated </span>
+                </li>
+                <li class="rotate60">
+                    <img src="images/img2.jpg" />
+                    <span class="image-name">60 deg roatated </span>
+                </li>
+
+            </ul>
+        </div>
+        <div>
+            <span class="title">
+                Roatating the third image in respective degrees
+            </span>
+            <ul>
+                <li class="rotate30">
+                    <img src="images/img3.png" />
+                    <span class="image-name">30 deg roatated </span>
+                </li>
+
+                <li class="rotate60">
+                    <img src="images/img3.png" />
+                    <span class="image-name">60 deg roatated </span>
+                </li>
+
+                <li class="rotate30">
+                    <img src="images/img3.png" />
+                    <span class="image-name">30 deg roatated </span>
+                </li>
+                <li class="rotate30">
+                    <img src="images/img3.png" />
+                    <span class="image-name">30 deg roatated </span>
+                </li>
+                <li class="rotate60">
+                    <img src="images/img3.png" />
+                    <span class="image-name">60 deg roatated </span>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div>
+            <span class="title">
+                Roatating the fourth image in respective degrees
+            </span>
+            <ul>
+                <li class="rotate30">
+                    <img src="images/img4.jpeg" />
+                    <span class="image-name">30 deg roatated </span>
+                </li>
+
+                <li class="rotate60">
+                    <img src="images/img4.jpeg" />
+                    <span class="image-name">60 deg roatated </span>
+                </li>
+
+                <li class="rotate30">
+                    <img src="images/img4.jpeg" />
+                    <span class="image-name">30 deg roatated </span>
+                </li>
+                <li class="rotate30">
+                    <img src="images/img4.jpeg" />
+                    <span class="image-name">30 deg roatated </span>
+                </li>
+                <li class="rotate60">
+                    <img src="images/img4.jpeg" />
+                    <span class="image-name">60 deg roatated </span>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+            <span class="title">
+                Roatating the fifth image in respective degrees
+            </span>
+            <ul>
+                <li class="rotate30">
+                    <img src="images/img5.jpg" />
+                    <span class="image-name">30 deg roatated </span>
+                </li>
+
+                <li class="rotate60">
+                    <img src="images/img5.jpg" />
+                    <span class="image-name">60 deg roatated </span>
+                </li>
+
+                <li class="rotate30">
+                    <img src="images/img5.jpg" />
+                    <span class="image-name">30 deg roatated </span>
+                </li>
+                <li class="rotate30">
+                    <img src="images/img5.jpg" />
+                    <span class="image-name">30 deg roatated </span>
+                </li>
+                <li class="rotate60">
+                    <img src="images/img5.jpg" />
+                    <span class="image-name">60 deg roatated </span>
+                </li>
+
+            </ul>
+        </div>
+    </body>
+</html>

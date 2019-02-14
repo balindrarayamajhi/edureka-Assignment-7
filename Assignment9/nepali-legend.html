@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Legends of Nepal Democratic Movement</title>
+    <meta name="viewport" content="width=device-width,intial scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap-3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <style>
+        .jumbotron {
+            background-image: url("images/democracy-movement-nepal-7-638.jpg");
+            height: 250px;
+        }
+        
+        .row {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        #myModal {
+            margin: 15%;
+            width: 70%;
+            height: 50%;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+
+            <div id="center">
+                <h2 class="text-center" style="color:greenyellow">Legends of Nepal Democratic Movement </h2>
+            </div>
+
+        </div>
+        <div class=row>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a data-toggle="modal" data-target="#myModal">
+                        <img id="img1" onclick="load(this)" src="images/bp-koirala.jpg" alt="" style="width:100%;height:300px">
+                    </a>
+                    <div class="caption">
+                        <h3 class="text-center">B.P. Koirala</h3>
+                        <h4 class="text-center">(8 September 1914 – 21 July 1982)</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a data-toggle="modal" data-target="#myModal">
+                        <img id="img2" onclick="load(this)" src="images/madan-bhandari.jpg" alt="" style="width:100%;height:300px">
+                    </a>
+                    <div class="caption">
+                        <h3 class="text-center">Madan Bhandari</h3>
+                        <h4 class="text-center">(27 June 1951 – 16 May 1993) </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a data-toggle="modal" data-target="#myModal">
+                        <img id="img3" onclick="load(this)" src="images/manamohan-adhikari.jpg" alt="" style="width:100%;height:300px">
+                    </a>
+                    <div class="caption">
+                        <h3 class="text-center">Manamohan Adhikari</h3>
+                        <h4 class="text-center">(9 June 1920 – 26 April 1999) </h4>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class=row>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a data-toggle="modal" data-target="#myModal">
+                        <img id="img4" onclick="load(this)" src="images/puspalal.jpg" alt="" style="width:100%;height:300px">
+                    </a>
+                    <div class="caption">
+                        <h3 class="text-center">Puspalal Shrestha</h3>
+                        <h4 class="text-center">(1924 – 22 July 1978)</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a data-toggle="modal" data-target="#myModal">
+                        <img id="img5" onclick="load(this)" src="images/ganeshman-singha.jpg" alt="" style="width:100%;height:300px">
+                    </a>
+                    <div class="caption">
+                        <h3 class="text-center">Ganesh Man Singh</h3>
+                        <h4 class="text-center">(November 9, 1915 – September 18, 1997) </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a data-toggle="modal" data-target="#myModal">
+                        <img id="img6" onclick="load(this)" src="images/krishnaprasad-bhattarai.jpg" alt="" style="width:100%;height:300px">
+                    </a>
+                    <div class="caption">
+                        <h3 class="text-center">Krishna Prasad Bhattarai</h3>
+                        <h4 class="text-center">(13 December 1924 – 4 March 2011) </h4>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">The Lenegds of Nepal Democratic Movement</h4>
+                </div>
+                <div class="modal-body" id="myModalBody">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function load(element) {
+            console.log(element.id);
+            // var xmlhttp;
+            // if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+            // } else { // code for IE6, IE5
+            //     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            // }
+
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("myModalBody").innerHTML = xmlhttp.responseText;
+                }
+            }
+
+            switch (element.id) {
+
+                case 'img1':
+                    xmlhttp.open("GET", "profiles/bp-koirala.html", true);
+                    break;
+
+                case 'img2':
+                    xmlhttp.open("GET", "profiles/bp-koirala.html", true);
+                    break;
+
+                case 'img3':
+                    xmlhttp.open("GET", "profiles/bp-koirala.html", true);
+                    break;
+
+                case 'img4':
+                    xmlhttp.open("GET", "profiles/bp-koirala.html", true);
+                    break;
+
+                case 'img5':
+                    xmlhttp.open("GET", "profiles/bp-koirala.html", true);
+                    break;
+
+                case 'img6':
+                    xmlhttp.open("GET", "profiles/bp-koirala.html", true);
+                    break;
+            }
+
+
+            xmlhttp.send();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>tranform</title>
+        <style>
+            div{
+                width:100px;
+                height:100px;
+                border:1px solid red;
+            }
+            .translate{
+                transform:translate(105px,50px);
+            }
+            .attribute{
+                color:darkorange;
+                font-weight:bold;
+             }
+            .value {
+                color: darkblue;
+                font-weight: bold;
+            }
+
+
+            #x45{
+                transform:skewX(45deg);
+                margin-left:60px;
+                margin-top:20px;
+            }
+
+            #x89 {
+                transform: skewX(89.4deg);
+                margin-left: 400px;
+                margin-top: 20px;
+            }
+            #x60 {
+                transform: skewX(60deg);
+                margin-left:125px;
+                margin-top: 20px;
+            }
+            #y45 {
+
+                transform: skewY(45deg);
+                margin: 100px 20px;
+
+            }
+            #y60 {
+                transform: skewY(60deg);
+                margin: 130px 30px;
+
+            }
+            #xy,#xy1{
+                margin:100px 50px;
+            }
+
+            #xy{
+                transform:skew(45deg,10deg);
+            }
+            #xy1{
+                transform:skewX(35deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="original">
+            <span class="desc">Original </span>
+        </div>
+        <div class="translate">
+            <span class="attribute">transfrom:</span><span class="value"> translate(105px,50px)</span>
+            <span class="desc">translated</span>
+
+        </div>
+        <div class="original">
+            <span class="desc">Original </span>
+        </div>
+
+        <div class="skew" id="x45">
+            <span class="attribute">transfrom:</span><span class="value">skewX(45deg)</span>
+            <span class="desc">Skewed </span>
+        </div>
+
+        <div class="skew" id="x60">
+            <span class="attribute">transfrom:</span><span class="value">skewX(60deg)</span>
+            <span class="desc">Skewed </span>
+        </div>
+        <div class="skew" id="x89">
+            <span class="attribute">transfrom:</span><span class="value">skewX(89deg)</span>
+            <span class="desc">Skewed </span>
+        </div> <div class="skew" id="y60">
+            <span class="attribute">transfrom:</span><span class="value">skewY(60deg)</span>
+            <span class="desc">Skewed </span>
+        </div>
+
+        <div class="original">
+            <span class="desc">Original </span>
+        </div>
+        <div class="skew" id="y45">
+            <span class="attribute">transfrom:</span><span class="value">skewy(45deg)</span>
+            <span class="desc">Skewed </span>
+        </div>
+
+        <div class="skew" id="xy">
+            <span class="attribute">transfrom:</span><span class="value">skew(45deg,10deg)</span>
+            <span class="desc">Skewed </span>
+        </div>
+
+        <div class="skew" id="xy1">
+            <span class="attribute">transfrom:</span><span class="value">skewx(35deg)</span>
+            <span class="desc">Skewed </span>
+        </div>
+
+    </body>
+</html>

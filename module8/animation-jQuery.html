@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <script src=jquery-3.3.1.min.js></script>
+    <link rel="stylesheet" type="text/css" href="fontawesome-5.6.3/css/all.min.css">
+    <title>jQuery Animation</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid crimson;
+            background-color: lightgreen;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+
+    <script>
+        $('document').ready(function() {
+            $('div').hover(function() {
+                    $(this).animate({
+                        width: '200px',
+                        height: '200px'
+                    }, 400);
+                },
+                function() {
+                    $(this).animate({
+                        width: '100px',
+                        height: '100px'
+                    });
+                }
+            );
+        });
+    </script>
+
+
+</body>
+
+</html>

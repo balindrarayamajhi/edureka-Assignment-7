@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>8B4EAC13-A6BB-4C96-888D-7C5478210485</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="29.2989853%" y1="0%" x2="85.7711754%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#A8EF44" offset="0%"></stop>
+            <stop stop-color="#64C81B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Home-page--first-fold" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-page-redesign" transform="translate(-580.000000, -719.000000)" fill-rule="nonzero">
+            <g id="Group-14" transform="translate(357.000000, 653.000000)">
+                <g id="Group-3" transform="translate(20.000000, 61.000000)">
+                    <g id="green_tick" transform="translate(203.000000, 5.000000)">
+                        <path d="M10.2426328,1.75734375 C9.10938281,0.624117188 7.60265625,0 6,0 C4.39732031,0 2.89059375,0.624117188 1.75734375,1.75734375 C0.624117188,2.89059375 0,4.39734375 0,6 C0,7.60265625 0.624117188,9.10938281 1.75734375,10.2426328 C2.89059375,11.3758828 4.39734375,12 6,12 C7.60265625,12 9.10938281,11.3758828 10.2426328,10.2426562 C11.3758828,9.10938281 12,7.60265625 12,6 C12,4.39734375 11.3758828,2.89061719 10.2426328,1.75734375 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+                        <path d="M8.31232867,3.62308731 C8.56213499,3.36396212 8.97111883,3.36396212 9.220953,3.62307196 C9.4658448,3.87705593 9.4658448,4.28518312 9.220953,4.5391671 L5.52059003,8.37694146 C5.39949091,8.50253666 5.23607097,8.5712585 5.0662982,8.5712585 C4.896505,8.5712585 4.73308364,8.50254082 4.61198159,8.37694257 L2.53416384,6.22200785 C2.28925724,5.96805188 2.28925724,5.55992469 2.53413424,5.30591271 C2.78394056,5.04678752 3.1929244,5.04678752 3.44275732,5.30589607 L5.06629555,6.98968778 L8.31232867,3.62308731 Z" id="Path" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

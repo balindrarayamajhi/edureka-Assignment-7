@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>handling horizontal overflow</title>
+    <style>
+
+        .style-attribute {
+            color: orange;
+        }
+
+        .value {
+            color: blue;
+        }
+
+        .first {
+            float:left;
+            margin-left:20px;
+            padding:5Px;
+            width:350px;
+            height:400px;
+            border: 2px solid red;
+            overflow:auto;
+
+        }
+
+        .second {
+            float: left;
+            margin-left: 20px;
+            padding: 5Px;
+            width: 350px;
+            height: 400px;
+            border: 2px solid red;
+            overflow: hidden;
+            resize: both
+        }
+
+        .third {
+            float: left;
+            margin-left: 20px;
+            padding: 5Px;
+            width: 350px;
+            height: 400px;
+            border: 2px solid red;
+            word-wrap:break-word;
+        }
+
+        .info {
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 0px;
+            font-style:italic;
+        }
+
+        h4 {
+            padding: 10px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .text{
+            color:cyan;
+        }
+    </style>
+</head>
+<body>
+    <h3> Vertical overflow  </h3>
+    <span class="info"> There is only one case horizontal overflow occurs when a word cannot fit in line.</span>
+
+    <div class="first">
+        <span class="style-attribute">overflow : </span><span class="value">auto </span> , check the horizontal and vertical scroll bar.
+        <span class="info">
+            Here height  is aslo limited so verctical overflow is occured too.
+        </span>
+        <p>Eius, sociosqu illo! Aenean aptent occaecati aliquet amet <span class="text"> vestibulumvestibulumvestibulumvestibulumvestibulumvestibulumvestibulum</span> massa occ massa occaecati minima gravida necessitatibus proident, phasellus ultricies auctor, eget velit fugit atque curabitur porttitor porttitor dapibus soluta consectetur habitant urna natoque fringilla exercitation vestibulum metus quam, lacinia euismod facilisi. Perspiciatis scelerisque varius dolor aut dis accusamus vero ab! Natoque similique voluptatum vivamus habitasse incidunt assumenda purus elit delectus minim minim! Tempore aspernatur distinctio aliquid natus, pariatur iure semper viverra vel pariatur optio metus sollicitudin ratione excepturi condimentum incidunt ratione tempore eu vulputate mattis donec enim assumenda pede aliquet, interdum aliquip, fermentum, quas ullamcorper occaecat aliquip? Qui! Magna elementum laoreet suspendisse consectetur leo, dis fringilla, condimentum viverra facere elementum! Quod dolorum lorem minus! Possimus cillum fermentum rhoncus, deserunt earum quia cubilia? Sint dis etiam vestibulum pulvinar, curabitur asperiores ullam voluptate totam mollitia debitis est pellentesque harum ipsa etiam orci, nisi metus, quae id auctor, dolor? Curae maxime rhoncus commodo quia adipisicing.</p>
+
+        <p>Morbi hic magna inceptos. Laborum animi etiam voluptates malesuada ultricies condimentum veritatis! Ea ratione vero dis habitant pharetra ipsam imperdiet placerat sollicitudin dictum pharetra incidunt morbi esse sociis tenetur nec eleifend magnis debitis minim aute risus platea vulputate? Mattis quam! Corporis quasi. Assumenda doloremque sapiente nemo voluptate orci. Nullam facilis? Suspendisse porro pariatur iusto, magna, proin, viverra accusantium, culpa orci, rerum dicta velit saepe voluptates quia auctor praesentium officiis officiis id labore turpis, dolorem venenatis, morbi cum mi ea sint, fuga, dui dictum posuere, omnis sem cursus fusce sapien ad, porta ullamcorper mus gravida eligendi dapibus facere adipiscing provident. Condimentum quos sem iste adipisicing magnis, consequuntur, fuga cupidatat? Do doloribus? Dicta nostrum. Ipsam justo! Nunc, netus morbi sit dicta? Scelerisque, mus pharetra proin! Harum cumque eius, quibusdam adipisci platea eleifend varius maxime vivamus ad mauris varius auctor debitis distinctio nulla, sagittis sed maxime litora, lectus proident sociosqu feugiat perspiciatis unde.</p>
+
+    </div>
+
+
+
+    <div class="second">
+        <span class="style-attribute">overflow : </span><span class="value">hidden  </span>and
+        <span class="style-attribute"> resize : </span><span class="value"> both  </span>
+        , check the three lined small handle on the buttom right corner of borders and use handle to change height
+        <span class="info">Here vertical overlow is also handled ,if not then handle can just change height.</span>
+        <p>Eius, sociosqu illo! Aenean aptent occaecati aliquet amet massa <span class="text"> vestibulumvestibulumvestibulumvestibulumvestibulumvestibulumvestibulum</span> massa occ minima gravida necessitatibus proident, phasellus ultricies auctor, eget velit fugit atque curabitur porttitor porttitor dapibus soluta consectetur habitant urna natoque fringilla exercitation vestibulum metus quam, lacinia euismod facilisi. Perspiciatis scelerisque varius dolor aut dis accusamus vero ab! Natoque similique voluptatum vivamus habitasse incidunt assumenda purus elit delectus minim minim! Tempore aspernatur distinctio aliquid natus, pariatur iure semper viverra vel pariatur optio metus sollicitudin ratione excepturi condimentum incidunt ratione tempore eu vulputate mattis donec enim assumenda pede aliquet, interdum aliquip, fermentum, quas ullamcorper occaecat aliquip? Qui! Magna elementum laoreet suspendisse consectetur leo, dis fringilla, condimentum viverra facere elementum! Quod dolorum lorem minus! Possimus cillum fermentum rhoncus, deserunt earum quia cubilia? Sint dis etiam vestibulum pulvinar, curabitur asperiores ullam voluptate totam mollitia debitis est pellentesque harum ipsa etiam orci, nisi metus, quae id auctor, dolor? Curae maxime rhoncus commodo quia adipisicing.</p>
+
+        <p>Morbi hic magna inceptos. Laborum animi etiam voluptates malesuada ultricies condimentum veritatis! Ea ratione vero dis habitant pharetra ipsam imperdiet placerat sollicitudin dictum pharetra incidunt morbi esse sociis tenetur nec eleifend magnis debitis minim aute risus platea vulputate? Mattis quam! Corporis quasi. Assumenda doloremque sapiente nemo voluptate orci. Nullam facilis? Suspendisse porro pariatur iusto, magna, proin, viverra accusantium, culpa orci, rerum dicta velit saepe voluptates quia auctor praesentium officiis officiis id labore turpis, dolorem venenatis, morbi cum mi ea sint, fuga, dui dictum posuere, omnis sem cursus fusce sapien ad, porta ullamcorper mus gravida eligendi dapibus facere adipiscing provident. Condimentum quos sem iste adipisicing magnis, consequuntur, fuga cupidatat? Do doloribus? Dicta nostrum. Ipsam justo! Nunc, netus morbi sit dicta? Scelerisque, mus pharetra proin! Harum cumque eius, quibusdam adipisci platea eleifend varius maxime vivamus ad mauris varius auctor debitis distinctio nulla, sagittis sed maxime litora, lectus proident sociosqu feugiat perspiciatis unde.</p>
+
+    </div>
+
+
+   
+    <div class="third">
+        <span class="style-attribute">word-wrap: </span><span class="value">break-word </span>
+        <span class="info">Now the word is break down into lines> here we dont manage vertical overflow.</span>
+
+        <p>Eius, sociosqu illo! Aenean aptent occaecati aliquet amet massa <span class="text"> vestibulumvestibulumvestibulumvestibulumvestibulumvestibulumvestibulum</span> massa occ minima gravida necessitatibus proident, phasellus ultricies auctor, eget velit fugit atque curabitur porttitor porttitor dapibus soluta consectetur habitant urna natoque fringilla exercitation vestibulum metus quam, lacinia euismod facilisi. Perspiciatis scelerisque varius dolor aut dis accusamus vero ab! Natoque similique voluptatum vivamus habitasse incidunt assumenda purus elit delectus minim minim! Tempore aspernatur distinctio aliquid natus, pariatur iure semper viverra vel pariatur optio metus sollicitudin ratione excepturi condimentum incidunt ratione tempore eu vulputate mattis donec enim assumenda pede aliquet, interdum aliquip, fermentum, quas ullamcorper occaecat aliquip? Qui! Magna elementum laoreet suspendisse consectetur leo, dis fringilla, condimentum viverra facere elementum! Quod dolorum lorem minus! Possimus cillum fermentum rhoncus, deserunt earum quia cubilia? Sint dis etiam vestibulum pulvinar, curabitur asperiores ullam voluptate totam mollitia debitis est pellentesque harum ipsa etiam orci, nisi metus, quae id auctor, dolor? Curae maxime rhoncus commodo quia adipisicing.</p>
+
+        <p>Morbi hic magna inceptos. Laborum animi etiam voluptates malesuada ultricies condimentum veritatis! Ea ratione vero dis habitant pharetra ipsam imperdiet placerat sollicitudin dictum pharetra incidunt morbi esse sociis tenetur nec eleifend magnis debitis minim aute risus platea vulputate? Mattis quam! Corporis quasi. Assumenda doloremque sapiente nemo voluptate orci. Nullam facilis? Suspendisse porro pariatur iusto, magna, proin, viverra accusantium, culpa orci, rerum dicta velit saepe voluptates quia auctor praesentium officiis officiis id labore turpis, dolorem venenatis, morbi cum mi ea sint, fuga, dui dictum posuere, omnis sem cursus fusce sapien ad, porta ullamcorper mus gravida eligendi dapibus facere adipiscing provident. Condimentum quos sem iste adipisicing magnis, consequuntur, fuga cupidatat? Do doloribus? Dicta nostrum. Ipsam justo! Nunc, netus morbi sit dicta? Scelerisque, mus pharetra proin! Harum cumque eius, quibusdam adipisci platea eleifend varius maxime vivamus ad mauris varius auctor debitis distinctio nulla, sagittis sed maxime litora, lectus proident sociosqu feugiat perspiciatis unde.</p>
+
+    </div>
+
+
+
+
+</body>
+</html>

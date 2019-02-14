@@ -1,0 +1,174 @@
+﻿<!--Solution for the fourth problem-->
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title> transfromation-3d</title>
+            <style>
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                li {
+                    width: 180px;
+                    height: 180px;
+
+                    float: left;
+                    margin: 65px 65px;
+                }
+
+                img {
+                    width: 180px;
+                    height: 130px;
+
+                }
+                .title{
+                    text-align:center;
+                    font-size:1.4em;
+                }
+                .rotate30y>img{
+                    -webkit-transform: rotateY(30deg);
+                    -moz-transform: rotateY(30deg);
+                    -o-transform: rotateY(30deg);
+                    transform: rotateY(30deg);
+                }
+                .rotate150y > img {
+                    -webkit-transform: rotateY(150deg);
+                    -moz-transform: rotateY(150deg);
+                    -o-transform: rotateY(150deg);
+                    transform: rotateY(150deg);
+                }
+                .roatate3d180 > img {
+                    -webkit-transform: rotate3d(1,1,1,180deg);
+                    -moz-transform: rotate3d(1,1,1,180deg);
+                    -o-transform: rotate3d(1,1,1,180deg);
+                    transform: rotate3d(0.4,1,0.6,180deg);
+                }
+
+                div {
+                    border: 2px solid red;
+
+                    float:left;
+                    overflow:auto;
+
+                }
+
+            </style>
+        </head>
+        <body>
+            <span class="title"> this solution attempt 1 more rotation 150 degree in y axis </span>
+            <div>
+                <span class=" =title"> Dispalying the first image and its repective rotations </span>
+                <ul>
+                    <li>
+                        <img src="images/firstimage.jpg" />
+                        <span class="image-name">First image </span>
+                    </li>
+
+                    <li class="rotate30y">
+                        <img src="images/firstimage.jpg" />
+                        <span class="image-name">30 deg roated in y axis </span>
+                    </li>
+                    <li class="rotate150y">
+                        <img src="images/firstimage.jpg" />
+                        <span class="image-name">150 deg roated in y axis </span>
+                    </li>
+                    <li class="roatate3d180">
+                        <img src="images/firstimage.jpg" />
+                        <span class="image-name">Roatated with 0.4 ,1 and 0.6 axis of rotation in x,y and z -aixs respectively in 180 clockwise. </span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div>
+                <span class="title"> Dispalying the second image and its repective rotations </span>
+                <ul>
+                    <li>
+                        <img src="images/secondimage.jpg" />
+                        <span class="image-name">Seocond image </span>
+                    </li>
+                    <li class="rotate30y">
+                        <img src="images/secondimage.jpg" />
+                        <span class="image-name">30 deg roated in y axis </span>
+                    </li>
+                    <li class="rotate150y">
+                        <img src="images/secondimage.jpg" />
+                        <span class="image-name">150deg roated in y axis </span>
+                    </li>
+                    <li class="roatate3d180">
+                        <img src="images/secondimage.jpg" />
+                        <span class="image-name">Roatated with 0.4 ,1 and 0.6 axis of rotation in x,y and z -aixs respectively in 180 clockwise. </span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div>
+                <span class=" =title"> Dispalying the third image and its repective rotations </span>
+                <ul>
+                    <li>
+                        <img src="images/thirdimage.png" />
+                        <span class="image-name">third image </span>
+                    </li>
+                    <li class="rotate30y">
+                        <img src="images/thirdimage.png" />
+                        <span class="image-name">30 deg roated in y axis </span>
+                    </li>
+                    <li class="rotate150y">
+                        <img src="images/thirdimage.png" />
+                        <span class="image-name">150 deg roated in y axis </span>
+                    </li>
+                    <li class="roatate3d180">
+                        <img src="images/thirdimage.png" />
+                        <span class="image-name">Roatated with 0.4 ,1 and 0.6 axis of rotation in x,y and z -aixs respectively in 180 clockwise. </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <span class=" =title"> Dispalying the fourth image and its repective rotations </span>
+                <ul>
+                    <li>
+                        <img src="images/fourthimage.jpg" />
+                        <span class="image-name">Seocond image </span>
+                    </li>
+                    <li class="rotate30y">
+                        <img src="images/fourthimage.jpg" />
+                        <span class="image-name">30 deg roated in y axis </span>
+                    </li>
+                    <li class="rotate150y">
+                        <img src="images/fourthimage.jpg" />
+                        <span class="image-name">150 deg roated in y axis </span>
+                    </li>
+                    <li class="roatate3d180">
+                        <img src="images/fourthimage.jpg" />
+                        <span class="image-name">Roatated with 0.4 ,1 and 0.6 axis of rotation in x,y and z -aixs respectively in 180 clockwise. </span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span class=" =title"> Dispalying the fifth image and its repective rotations </span>
+                <ul>
+                    <li>
+                        <img src="images/fifthimage.jpg" />
+                        <span class="image-name">Seocond image </span>
+                    </li>
+                    <li class="rotate30y">
+                        <img src="images/fifthimage.jpg" />
+                        <span class="image-name">30 deg roated in y axis </span>
+                    </li>
+                    <li class="rotate150y">
+                        <img src="images/fifthimage.jpg" />
+                        <span class="image-name">150deg roated in y axis </span>
+                    </li>
+                    <li class="roatate3d180">
+                        <img src="images/fifthimage.jpg" />
+                        <span class="image-name">Roatated with 0.4 ,1 and 0.6 axis of rotation in x,y and z -aixs respectively in 180 clockwise. </span>
+                    </li>
+                </ul>
+            </div>
+        </body>
+    </html>

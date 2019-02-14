@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery-ui/jquery-ui.min.js"></script>
+
+    <script src="jquery.countdown.package-2.1.0/js/jquery.plugin.min.js"></script>
+    <script src="jquery.countdown.package-2.1.0/js/jquery.countdown.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.countdown.package-2.1.0/css/jquery.countdown.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.theme.min.css">
+    <title>Countdown timer plugin</title>
+    <style>
+        #newyear-countdown {
+            margin: 20px;
+            overflow: hidden;
+        }
+        /* .countdown-amount {
+            margin-left: 20px;
+            margin-right: 0px;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div id="newyear-countdown">
+
+    </div>
+    <script>
+        $(document).ready(function() {
+            var newYearDate = new Date()
+            newYearDate.setFullYear(2017)
+            newYearDate.setMonth(0)
+            newYearDate.setDate(1)
+
+            $('#newyear-countdown').countdown({
+
+                until: newYearDate
+            })
+            console.log(newYearDate)
+            console.log('Year: ' + newYearDate.getFullYear())
+        })
+    </script>
+
+</body>
+
+</html>

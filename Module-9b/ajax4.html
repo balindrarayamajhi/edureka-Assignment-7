@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,intial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap-3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <title> Ajax-4</title>
+    <style>
+        h3,
+        h4 {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .jumbotron {
+            background-image: url("images/democracy-movement-nepal-7-638.jpg");
+            height: 250px;
+            position: relative;
+        }
+        
+        #center {
+            position: absolute;
+            top: 48%;
+            color: greenyellow;
+            font-weight: bold;
+        }
+        
+        .row {
+            margin: 20px 0px;
+        }
+        
+        #myModal {
+            margin: 15%;
+            width: 70%;
+            height: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+
+            <div id="center">
+                <h2 class="text-center">Legends of Nepal Democratic Movement </h2>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a class="btn btn-primary" data-toogle="modal" data-target="#myModal">
+                        <img id="img1" src="images/bp-koirala.jpg" alt="" style="width:100%;height:300px">
+                    </a>
+
+                    <div class="caption">
+                        <h3 class="text-center">B.P. Koirala</h3>
+                        <h4 class="text-center">(8 September 1914 – 21 July 1982)</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a class="btn btn-primary" data-toogle="modal" data-target="#myModal">
+                        <img id="img2" src="images/madan-bhandari.jpg" alt="" style="width:100%;height:300px">
+                    </a>
+                    <div class="caption">
+                        <h3 class="text-center">Madan Bhandari</h3>
+                        <h4 class="text-center">(27 June 1951 – 16 May 1993) </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a class="btn btn-primary" data-toogle="modal" data-target="#myModal">
+                        <img id="img3" src="images/manamohan-adhikari.jpg" alt="" style="width:100%;height:300px">
+                    </a>
+                    <div class="caption">
+                        <h3 class="text-center">Manamohan Adhikari</h3>
+                        <h4 class="text-center">(9 June 1920 – 26 April 1999) </h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a class="btn btn-primary" data-toogle="modal" data-target="#myModal">
+                        <img id="img4" src="images/puspalal.jpg" alt="" style="width:100%;height:300px">
+                    </a>
+                    <div class="caption">
+                        <h3 class="text-center">Pusphalal Shrestha</h3>
+                        <h4 class="text-center">(1924 – 22 July 1978)</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a class="btn btn-primary" data-toogle="modal" data-target="#myModal">
+                        <img id="img5" src="images/ganeshman-singha.jpg" alt="" style="width:100%;height:300px">
+                    </a>
+                    <div class="caption">
+                        <h3 class="text-center">Ganesh Man Singh</h3>
+                        <h4 class="text-center">(November 9, 1915 – September 18, 1997) </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a class="btn btn-primary" data-toogle="modal" data-target="#myModal">
+                        <img id="img6" src="images/krishnaprasad-bhattarai.jpg" alt="" style="width:100%;height:300px">
+                    </a>
+                    <div class="caption">
+                        <h3 class="text-center">Krishna Prasad Bhattarai</h3>
+                        <h4 class="text-center">(13 December 1924 – 4 March 2011) </h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="myModal" tabinex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        function sucess(responseText) {
+            document.getElementById('test').innerHTML = responseText;
+        }
+
+        function failure() {
+            alert("coudnot retrieve " + url)
+        }
+
+        function ajax(config) {
+
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.addEventListener('readystatechange', function() {
+
+                if (xhr.status >= 200 && xhr.status < 300 && xhr.readyState === 4) {
+                    config.sucess(xhr.responseText);
+                } else if (xhr.readyState > 400) {
+                    config.failure();
+                }
+            });
+            xhr.open(config.method, config.url, true);
+            xhr.send();
+        }
+        ajax({
+            method: 'GET',
+            url: 'test1.txt',
+            'sucess': sucess,
+            'failure': failure
+        });
+    </script> -->
+</body>
+
+</html>

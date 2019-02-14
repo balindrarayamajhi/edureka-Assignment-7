@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Transforms</title>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                border: 1px solid red;
+                padding: 10px;
+
+
+            }
+            .rot, .rotate, .anti-rotate {
+                margin: 20px 30px;
+                display: inline-block;
+                float: left;
+            }
+
+            .rotate {
+                transform: rotate(45deg);
+                /* for old version broswers need perfix version*/
+
+                -webkit-transform: rotate(45deg);            /* for chrome adn safari */
+                -moz-transform: rotate(45deg);               /* for mozzila */
+                -o-transform:rotate(45deg);                 /* for opera */
+
+                /*  write styling for old version broswers first */
+                transform: rotate(45deg);
+            }
+            .attribute {
+                color: darkorange;
+                font-weight: bold;
+            }
+            .value {
+                color: darkgreen;
+                font-weight: bold;
+            }
+            span.desc {
+                padding: 5px;
+                display: block;
+                font-weight: bold;
+            }
+            .anti-rotate {
+                transform: rotate(-45deg);
+            }
+            .scale {
+                margin: 70px 130px;
+                transform: scale(3,2);
+                display: inline-block;
+                float: left;
+            }
+
+            .translate {
+               
+                transform: translate(200,200);
+
+            }
+        </style>
+    </head>
+    <body>
+        <!-- four kinds of trsnforms 
+         rotate,scale,translate,skew -->
+        <div class="rot" >
+            <span class="desc">Original</span>
+        </div>
+        <div class="rotate">
+            <span class="attribute">transfrom:</span><span class="value"> rotate(45deg)</span>
+            <span class="desc">Rotated</span> 
+        </div>
+        <div class="anti-rotate">
+            <span class="attribute">transfrom:</span><span class="value"> rotate(-45deg)</span>
+            <span class="desc">Rotated</span>
+        </div>
+        <div class="scale">
+            <span class="attribute">transfrom:</span><span class="value"> scale(3,2)</span>
+            <span class="desc">Scaled(3,2) means 3x and 2y</span>
+        </div>
+
+    </body>
+
+
+</html>
